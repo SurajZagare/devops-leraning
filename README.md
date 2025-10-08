@@ -1,3 +1,14 @@
+# 🐙 A Visual Guide to Git Commands
+
+> Your ultimate interactive cheatsheet for mastering Git.  
+
+---
+
+## 🌀 The Daily Git Workflow
+
+This is the fundamental process every developer follows.  
+It's a simple loop of checking the status of your project, adding your changes to a "staging area," and then permanently saving them with a descriptive commit message.
+
 
 | Stage | Command | Description |
 |:------|:---------|:-------------|
