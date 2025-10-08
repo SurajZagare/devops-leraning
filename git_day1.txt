@@ -1,0 +1,142 @@
+Here’s a complete list of **Git commands** with **short, clear notes** — perfect for quick revision 👇
+
+---
+
+## 🧩 **Basic Git Setup**
+
+| Command                                            | Description                              |
+| -------------------------------------------------- | ---------------------------------------- |
+| `git --version`                                    | Check the installed Git version.         |
+| `git config --global user.name "Your Name"`        | Set your username (used in commits).     |
+| `git config --global user.email "you@example.com"` | Set your email (used in commits).        |
+| `git config --list`                                | Show all current configuration settings. |
+| `git help`                                         | Show help for Git commands.              |
+
+---
+
+## 🏁 **Starting a Repository**
+
+| Command                | Description                                                       |
+| ---------------------- | ----------------------------------------------------------------- |
+| `git init`             | Initialize a new Git repository in the current directory.         |
+| `git clone <repo_url>` | Clone (download) a repository from GitHub or other remote source. |
+
+---
+
+## 📁 **Staging and Committing**
+
+| Command                    | Description                                                     |
+| -------------------------- | --------------------------------------------------------------- |
+| `git status`               | Check the current status of files (tracked/untracked/modified). |
+| `git add <file>`           | Add a specific file to the staging area.                        |
+| `git add .`                | Add all changes in the current directory to the staging area.   |
+| `git commit -m "message"`  | Commit staged changes with a message.                           |
+| `git commit -am "message"` | Add and commit all tracked files in one step.                   |
+
+---
+
+## 🕹️ **Branching and Merging**
+
+| Command                         | Description                                     |
+| ------------------------------- | ----------------------------------------------- |
+| `git branch`                    | List all branches.                              |
+| `git branch <branch_name>`      | Create a new branch.                            |
+| `git checkout <branch_name>`    | Switch to another branch.                       |
+| `git checkout -b <branch_name>` | Create and switch to a new branch.              |
+| `git merge <branch_name>`       | Merge the given branch into the current branch. |
+| `git branch -d <branch_name>`   | Delete a branch.                                |
+
+---
+
+## 🔄 **Working with Remote Repositories**
+
+| Command                       | Description                                          |
+| ----------------------------- | ---------------------------------------------------- |
+| `git remote -v`               | Show all remote repositories linked to your project. |
+| `git remote add origin <url>` | Add a remote repository (usually GitHub).            |
+| `git push -u origin main`     | Push local commits to the main branch on remote.     |
+| `git push`                    | Push committed changes to remote repository.         |
+| `git pull`                    | Fetch and merge changes from remote repository.      |
+| `git fetch`                   | Download changes from remote (but don’t merge).      |
+| `git clone <url>`             | Copy a remote repository to your local machine.      |
+
+---
+
+## 📜 **Viewing History**
+
+| Command                | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| `git log`              | Show commit history.                            |
+| `git log --oneline`    | Show commit history in one line per commit.     |
+| `git show <commit_id>` | Show details of a specific commit.              |
+| `git diff`             | Show unstaged changes.                          |
+| `git diff --staged`    | Show changes that are staged but not committed. |
+
+---
+
+## 🧹 **Undoing Changes**
+
+| Command                    | Description                                           |
+| -------------------------- | ----------------------------------------------------- |
+| `git restore <file>`       | Discard changes in a file (before staging).           |
+| `git reset <file>`         | Unstage a file (but keep changes).                    |
+| `git reset --hard`         | Remove all changes (reset to last commit).            |
+| `git checkout <commit_id>` | Go to a specific commit (detached HEAD).              |
+| `git revert <commit_id>`   | Undo a specific commit safely (creates a new commit). |
+
+---
+
+## 🧩 **Tagging Versions**
+
+| Command                              | Description                    |
+| ------------------------------------ | ------------------------------ |
+| `git tag`                            | List all tags.                 |
+| `git tag <tag_name>`                 | Create a lightweight tag.      |
+| `git tag -a <tag_name> -m "message"` | Create an annotated tag.       |
+| `git push origin <tag_name>`         | Push a specific tag to remote. |
+| `git push origin --tags`             | Push all tags to remote.       |
+
+---
+
+## 🧠 **Stashing (Temporary Save)**
+
+| Command           | Description                             |
+| ----------------- | --------------------------------------- |
+| `git stash`       | Save uncommitted changes temporarily.   |
+| `git stash list`  | Show all stashed changes.               |
+| `git stash apply` | Reapply the most recent stash.          |
+| `git stash drop`  | Delete the most recent stash.           |
+| `git stash pop`   | Apply and remove the most recent stash. |
+
+---
+
+## ⚙️ **Advanced Commands**
+
+| Command                       | Description                                           |
+| ----------------------------- | ----------------------------------------------------- |
+| `git rebase <branch>`         | Apply commits from another branch (clean history).    |
+| `git cherry-pick <commit_id>` | Apply a specific commit from another branch.          |
+| `git blame <file>`            | Show who last modified each line in a file.           |
+| `git clean -f`                | Remove untracked files.                               |
+| `git reflog`                  | Show all recent actions (commits, resets, checkouts). |
+
+---
+
+## 🧭 **Shortcut Summary**
+
+| Task               | Command                       |
+| ------------------ | ----------------------------- |
+| Create new repo    | `git init`                    |
+| Connect to remote  | `git remote add origin <url>` |
+| Stage all files    | `git add .`                   |
+| Commit changes     | `git commit -m "message"`     |
+| Push to remote     | `git push -u origin main`     |
+| Check status       | `git status`                  |
+| See history        | `git log --oneline`           |
+| Create branch      | `git checkout -b new-branch`  |
+| Merge branch       | `git merge branch-name`       |
+| Update from remote | `git pull`                    |
+
+---
+
+Would you like me to create this list as a **beautiful printable PDF cheatsheet** (with proper categories and color formatting)?
